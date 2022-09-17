@@ -1,0 +1,229 @@
+:root{
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+}
+body{
+    background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 30px top, 100px bottom;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: min(100% -2rem, 300px);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 3rem 1rem 3rem 1rem;
+}
+
+.card-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1{
+    color: var(--Very-Dark-Magenta);
+    text-align: center;
+    font-size: 2.2rem;
+    line-height: 2rem;
+    font-weight: 700;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+}
+
+article p{
+    color: var(--Dark-Grayish-Magenta);
+    text-align: center;
+    line-height: 22px;
+    font-weight: 400;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+}
+
+.rating{
+    width: 90%;
+}
+
+.rate_1, .rate_2, .rate_3{
+    background-color: var(--Light-Grayish-Magenta);
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.rate p{
+    text-align: center;
+}
+.star{
+    margin-bottom: 5px;
+}
+
+.card-bottom{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.card-bottom div{
+    background-color: var(--Very-Dark-Magenta);
+    padding: 1rem 1.2rem 1rem 1.2rem;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.card-bottom img{
+    border-radius: 50px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+cite{
+    display: inline-block;
+    font-style: normal;
+    color: var(--White);
+    font-weight: 500;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+cite span{
+    color: var(--Soft-Pink);
+}
+
+blockquote{
+    margin-top: 15px;
+    color: var(--White);
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.footer{
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 900px){
+    body{
+        background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: -200px top, 250px bottom;
+    }
+    
+    .card-top{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+    }
+
+    .card-bottom{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    article{
+        min-width: 40%;
+        margin-left: 1.25rem;
+    }
+    h1{
+        text-align: left;
+        font-size: 3.5rem;
+        padding: 0;
+        width: 80%;
+        line-height: 3rem;
+    }
+
+    article p{
+        text-align: left;
+        padding-left: 0px;
+        width: 75%;
+    }
+
+    .star{
+        margin-right: 20px;
+        margin-bottom: 0px;
+    }
+    .rating{
+        max-width: 60%;
+    }
+    
+    .rate_1, .rate_2, .rate_3{
+        max-width: 450px;
+        min-width: 350px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .rate_1{
+        margin-left: 2.5rem;
+        margin-right: 7.5rem;
+
+    }
+
+    .rate_2{
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .rate_3{
+        margin-left: 7.5rem;
+        margin-right: 2.5rem;
+    }
+
+    
+    .card-bottom div{
+        width: 32%;
+        height: 90%;
+        padding: 1.8rem 1.25rem 1.8rem 1.25rem;
+
+    }
+
+    .review_1{
+        margin-top: 0.8rem;
+        margin-bottom: 2.4rem;
+    }
+    .review_2{
+        margin-top: 1.6rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .review_3{
+        margin-top: 2.4rem;
+        margin-bottom: 0.8rem;
+    }
+}
+
