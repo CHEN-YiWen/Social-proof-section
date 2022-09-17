@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/CHEN-YiWen/Social-proof-section)
-- Live Site URL: [site hosted by Github](https://your-live-site-url.com)
+- Live Site URL: [site hosted by Github](https://chen-yiwen.github.io/Social-proof-section/)
 
 ## My process
 
